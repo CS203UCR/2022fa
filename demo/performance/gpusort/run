@@ -1,0 +1,13 @@
+#./hybridsort r
+#sudo ~/bin/bin/clearcache.sh
+#./hybridsort_cpu /homes/h1tseng/Gordon/PMCS/benchmarks/rodinia_3.0/data/hybridsort/30000000.bin 30000000
+sudo ./clearcache.sh
+./hybridsort /home/hungweitseng/300000000_1.bin 134217728
+#./hybridsort /nfshome/htseng/300000000_1.bin 134217728
+sudo ./clearcache.sh
+./hybridsort /home/hungweitseng/300000000_1.bin 134217728 1
+#./hybridsort /nfshome/htseng/300000000_1.bin 134217728 1
+#/mnt/intel/htseng3/hybridsort/100000000.bin 100000000
+#/mnt/seagate/htseng3/100000000.bin 100000000
+#sudo ~/bin/bin/clearcache.sh
+#./hybridsort /mnt/princeton/h1tseng/rodinia_3.0/data/hybridsort/300000000.bin 300000000

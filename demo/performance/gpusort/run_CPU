@@ -1,0 +1,5 @@
+#./hybridsort r
+sudo ./clearcache.sh
+./hybridsort_cpu /home/hungweitseng/300000000_1.bin 134217728
+#./hybridsort_cpu /nfshome/htseng/300000000_1.bin 134217728
+#/mnt/seagate/htseng3/100000000.bin 100000000

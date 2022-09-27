@@ -1,0 +1,7 @@
+#./hybridsort r
+#sudo ~/bin/bin/clearcache.sh
+sudo ./clearcache.sh
+time ./hybridsort /mnt/samsung/htseng/300000000_1.bin 134217728
+sudo ./clearcache.sh
+time ./hybridsort /mnt/samsung/htseng/300000000_1.bin 134217728 1
+#./hybridsort /tmp/300000000_1.bin 100000000
