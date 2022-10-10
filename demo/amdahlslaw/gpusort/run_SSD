@@ -1,0 +1,2 @@
+/usr/sbin/clearcache > /dev/null
+./hybridsort /mnt/intel/htseng3/300000000_1.bin 134217728 1

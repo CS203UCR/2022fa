@@ -1,0 +1,2 @@
+/usr/sbin/clearcache > /dev/null
+./hybridsort_cpu /mnt/seagate/htseng/300000000_1.bin 134217728

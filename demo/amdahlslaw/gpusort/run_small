@@ -1,0 +1,6 @@
+/usr/sbin/clearcache > /dev/null
+echo -n "HDD+GPU,$1," >> ../sort_small.csv
+./hybridsort /backup/htseng/courses/CSE142/data/300000000_1.bin $1 1
+/usr/sbin/clearcache > /dev/null
+echo -n "HDD+CPU,$1," >> ../sort_small.csv
+./hybridsort_cpu /backup/htseng/courses/CSE142/data/300000000_1.bin $1 1
