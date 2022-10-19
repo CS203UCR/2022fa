@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     ARRAY_SIZE = atoi(argv[1]);
   if(argc >= 3)
     RUN_ARRAY_SIZE = atoi(argv[2]);
-  a = (double *)malloc(ARRAY_SIZE*5*sizeof(double));
+  a = (double *)valloc(ARRAY_SIZE*5*sizeof(double));
   for(i = 0; i < ARRAY_SIZE; i++)
       a[i] = (rand()%100)+1;
   b = &a[ARRAY_SIZE];
@@ -52,6 +52,13 @@ int main(int argc, char **argv)
     for(i = 0; i < RUN_ARRAY_SIZE; i++)
     {
         e[i] = (a[i] * b[i] + c[i])/d[i];
+#ifdef DUMP
+        fprintf(stderr, "a[%d], %p\n",i,&a[i]);
+        fprintf(stderr, "b[%d], %p\n",i,&b[i]);
+        fprintf(stderr, "c[%d], %p\n",i,&c[i]);
+        fprintf(stderr, "d[%d], %p\n",i,&d[i]);
+        fprintf(stderr, "e[%d], %p\n",i,&e[i]);
+#endif
     }
   //END
   printf("%lf\n",c[rand()%256]);
