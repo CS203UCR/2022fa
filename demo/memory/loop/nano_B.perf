@@ -1,0 +1,24 @@
+==32200== Cachegrind, a cache and branch-prediction profiler
+==32200== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==32200== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==32200== Command: ./loop_B 524288
+==32200== 
+--32200-- Warning: Cannot auto-detect cache config, using defaults.
+--32200--          Run with -v to see.
+random in e:15.337500 0.158659 seconds
+==32200== 
+==32200== I   refs:      222,456,207
+==32200== I1  misses:          1,190
+==32200== LLi misses:          1,095
+==32200== I1  miss rate:        0.00%
+==32200== LLi miss rate:        0.00%
+==32200== 
+==32200== D   refs:       98,883,181  (61,645,470 rd   + 37,237,711 wr)
+==32200== D1  misses:        724,346  (   330,455 rd   +    393,891 wr)
+==32200== LLd misses:        723,640  (   329,821 rd   +    393,819 wr)
+==32200== D1  miss rate:         0.7% (       0.5%     +        1.1%  )
+==32200== LLd miss rate:         0.7% (       0.5%     +        1.1%  )
+==32200== 
+==32200== LL refs:           725,536  (   331,645 rd   +    393,891 wr)
+==32200== LL misses:         724,735  (   330,916 rd   +    393,819 wr)
+==32200== LL miss rate:          0.2% (       0.1%     +        1.1%  )
